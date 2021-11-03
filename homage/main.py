@@ -3,8 +3,8 @@ import random
 
 # canvas size and subset square dimensions are predetermined
 MAX_HEIGHT  = 28
-INNER_DIFF  = 8
-TOP_DIFF    = 6
+INNER_DIFF  = 6
+TOP_DIFF    = 4
 
 def set_colors():
     """
@@ -35,7 +35,7 @@ def write_square():
             row = f'{first_color * INNER_DIFF}{second_color * INNER_DIFF}{third_color * INNER_DIFF}{fourth_color * (MAX_HEIGHT * 2 - (INNER_DIFF * 6))}{third_color * INNER_DIFF}{second_color * INNER_DIFF}{first_color * INNER_DIFF}'
             square += f'{row}\n'
         
-        elif  i >= TOP_DIFF*2 and i < MAX_HEIGHT-4: 
+        elif  i >= TOP_DIFF*2 and i < MAX_HEIGHT-4:
             row = f'{first_color * INNER_DIFF}{second_color * INNER_DIFF}{third_color * (MAX_HEIGHT * 2 - (INNER_DIFF * 4))}{second_color * INNER_DIFF}{first_color * INNER_DIFF}'
             square += f'{row}\n' 
         
